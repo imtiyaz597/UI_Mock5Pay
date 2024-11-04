@@ -1,0 +1,118 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="payment-form">
+
+                <div class="logo">
+                    <div class="logo-circle"></div>
+                    <div class="logo-text">AceCoinPay</div>
+
+                    <div class="time">
+                        <div class="timer-digit">0</div>
+                        <div class="timer-digit">1</div>
+                        <span class="time-seprator">:</span>
+                        <div class="timer-digit">1</div>
+                        <div class="timer-digit">9</div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Card Number</label>
+                    <p>Enter the 16-digit card number on the card</p>
+                    <div class="card-input">
+                        <img src="/img/master.png" alt="mastercard"
+                            class="icon">
+                        <div class="card-number">
+
+                            <label class="one">2412</label>
+                            <span>-</span>
+                            <label class="one">7512</label>
+                            <span>-</span>
+                            <label class="one">3412</label>
+                            <span>-</span>
+                            <label class="one">3456</label>
+
+                        </div>
+                        <img src="/img/verified.png" alt="verified"
+                            class="icon-right">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">CVV Number</label>
+                    <p>Enter the 3 or 4 digit number on the card</p>
+                    <input type="text" class="card-input cvv-input " value="327"
+                        readonly>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Expiry Date</label>
+                    <div class="date-inputs">
+                        <p>Enter the expiration date of the card</p>
+
+                        <input type="text" class="card-input date-input"
+                            value="09" readonly>
+                        <span class="date-separator">/</span>
+                        <input type="text" class="card-input date-input"
+                            value="22" readonly>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <p>Enter your Dynamic password</p>
+                    <input type="password" class="card-input" value="········"
+                        readonly>
+                </div>
+
+                <button class="pay-button">Pay Now</button>
+            </div>
+
+            <div class="order-summary">
+                <div class="card-preview">
+                    <img class="chip" src="/img/chip.jpeg" alt="chip" class="chip">
+                    <div class="card-holder">Jonathan Michael</div>
+                    <div class="card-number-preview">•••• 3456</div>
+                    <div class="card-expiry">
+                        <span>09/22</span>
+                        <img src="/img/master.png" alt="mastercard"
+                            class="icon-right">
+                    </div>
+                </div>
+
+                <div class="order-details">
+                    <div
+                        class="detail-row"><span>Company</span><span>Apple</span></div>
+                    <div class="detail-row"><span>Order
+                            Number</span><span>1266201</span></div>
+                    <div class="detail-row"><span>Product</span><span>MacBook
+                            Air</span></div>
+                    <div class="detail-row"><span>VAT
+                            (20%)</span><span>$100.00</span></div>
+                </div>
+
+                <div class="total">
+                    <div class="total-text">You have to Pay</div>
+                    <div class="total-amount">
+                        <span>549.99 USD</span>
+                        <img src="/img/receipt.png" alt="receipt"
+                            class="icon-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
